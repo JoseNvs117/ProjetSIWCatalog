@@ -1,0 +1,48 @@
+
+ <!DOCTYPE html>
+ <html>
+        <head>
+            <title>Movie Details</title>
+            <ul id="navIdMovie"> 
+                <li><a href="/" >Home </a></li>
+                <li><a href="/form" >Games</a></li>
+                <li><a href="/formMovie" >Movies</a></li>
+            </ul>
+            <link type="text/css" rel="stylesheet" href="stylesheet.css">
+        </head>
+
+        <body id="backIdMovie">
+            <div class="main-text-details">
+                <h1>Movie details</h1>
+                <h2>Name :</h2>
+                <p><img src="${movie.thumbnail}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td th:text="${movie.name}"></td></p>
+                                          
+                
+                
+                <p><td th:text="${movie.thumbnail}"></td></p>
+                         
+                <h2>Director :</h2>
+                <tr th:each="director : ${movie.director}">
+                    <p> 
+                        <a th:href="@{/movielist(director=${director})}"> 
+                            <td th:text="${director}"></td>
+                        </a>
+                    </p>        
+                </tr>
+ 
+                <h2>Starring :</h2>
+                <tr th:each="starring : ${movie.starring}">
+                    <p> 
+                        <a th:href="@{/movielist(starring=${starring})}"> 
+                            <td th:text="${starring}"></td> 
+                        </a>
+                    </p>        
+                </tr>
+            </div>
+        </body>
+        <footer id="idMovieFooter" >
+            <p>CopyRight @ 2022 - SIW Project CNAM - José Antunes NEVES - FIP 2 </p>
+            <a href="https://www.instagram.com/joseantunesneves/">Instagram<img src="img/insta.png" style="width: 15px;"></a>
+            <a href="https://github.com/JoseNvs117">GitHub<img src="img/git.png" style="width: 15px;"></a>
+        </footer>
+ </html> 

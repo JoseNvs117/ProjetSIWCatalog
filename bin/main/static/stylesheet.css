@@ -1,0 +1,536 @@
+#homeBack{
+  background-image: url("img/blob.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homeFooter{
+  padding-top: 5%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}
+
+#homeFooter a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+#homeFooter a:hover {
+  color: #394D61;
+}
+
+
+#homeTitle{
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 80px;
+  color: white;
+}
+
+#listBack{
+  background-image: url("img/listgreen.png");
+  background-size:contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+#listBackMovies{
+  background-image: url("img/listorange.png");
+  background-size:contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+
+#backIdGame:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  
+  display: block;
+  background-image: url("img/controller.gif");
+  background-size:contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 800px;
+  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#backIdGame{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#backIdMovie:before {
+  content: "";
+  position: fixed;
+  left: 50%;
+  right: 0;
+  z-index: -1;
+  
+  display: block;
+  background-image: url("img/bluprin2.jpeg");
+  background-size:cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 800px;
+  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#backIdMovie{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#homeGames{
+  background-image: url("img/blucntrl.jpg");
+}
+#homeMovies{
+  background-image: url("img/cinesit.jpg");
+}
+.homeDiv{
+  -moz-border-radius: 1px;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+  width: 350px;
+  border-radius: 3%;
+  display: inline-block;
+  margin-left: 17%;
+}
+
+.homeDiv:hover{
+    
+  filter: grayscale(100%);
+
+  @media (min-width: 30rem) {
+    grid-template-columns: repeat(3, 150px);
+  }
+}
+
+.homeDiv a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55%;
+  text-decoration: none;
+}
+
+#divPrez{
+  margin-top: 100px;
+  margin-left: 500px;
+  width: 400px;
+  text-align: justify;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#divPrez h2{
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#homeGames button:hover{
+  font-size: 35px;
+  filter: blur(2px);
+}
+#homeMovies button:hover{
+  font-size: 35px;
+  filter: blur(2px);
+}
+
+
+/* --------------------------- */
+/* Forms */
+/* --------------------------- */
+
+#listFooter{
+  background-color:  #93faa5;
+  padding: 2%;
+  margin-top: 10%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}
+#listFooter a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+#listFooter a:hover {
+  color: #394D61;
+}
+
+#idGameFooter{
+  background-color:  #009473;
+  padding: 1%;
+  margin-top: 10%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}
+#idGameFooter a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+#idGameFooter a:hover {
+  color: #394D61;
+}
+
+#idMovieFooter{
+  background-color:  #ffcd76;
+  padding: 1%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}
+#idMovieFooter a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+#idMovieFooter a:hover {
+  color: #394D61;
+}
+
+#listFooterMovie{
+  background-color:  #ffcd76;
+  padding: 2%;
+  margin-top: 10%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}
+#listFooterMovie a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+#listFooterMovie a:hover {
+  color: #394D61;
+}
+
+#formFooter{
+  margin-top: 50%;
+  padding: 2%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}
+#formFooter a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+#formFooter a:hover {
+  color: #394D61;
+}
+
+/* games */
+#formGamesBody{
+  height: 100%;
+  background: linear-gradient(90deg, #93faa5 50%, white 50%);
+}
+#formGamesBody div{
+  float: left;
+  clear: none; 
+}
+
+/* movies */
+#formMoviesBody{
+  height: 100%;
+  background: linear-gradient(90deg, #FFE4B5 50%, white 50%);
+}
+#formMoviesBody div{
+  float: left;
+  clear: none; 
+}
+
+#divList{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#divList h2, a{
+ margin-left: 20%;
+}
+
+#divForm{
+  width: 40%;  
+  padding-left: 10%;
+  padding-top: 15%;
+}
+
+#divForm h1, p {
+  font-family: "Lucida Console", Courier, monospace;
+  margin-left: 50px;
+}
+
+#formMoviesBody .formBtnList{
+  background-color: #FFE4B5;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 25%;
+}
+#formMoviesBody .formBtnList:hover{
+  background-color: white;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+}
+
+.formBtnList{
+  background-color: #93faa5;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 25%;
+}
+.formBtnList:hover{
+  background-color: white;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+}
+
+#form-button
+{  
+  padding: 15%;
+	background-color: transparent;
+  color: white;
+  border: 0px solid;
+  margin-left: 30px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.form-style{
+  width: 450px;
+  font-size: 16px;
+  padding: 30px 30px 15px 30px;
+}
+
+.form-style input[type=submit],
+.form-style input[type=button],
+.form-style input[type=text],
+.form-style input[type=email],
+.form-style label
+{
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 16px;
+  color: black;
+
+}
+.form-style label {
+  display:block;
+  margin-bottom: 10px;
+}
+.form-style label > span{
+  display: inline-block;
+  /* float: left; */
+  width: 150px;
+}
+.form-style input[type=text],
+.form-style input[type=email] 
+{
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed #83A4C5;
+  width: 275px;
+  outline: none;
+  padding: 0px 0px 0px 0px;
+  font-style: italic;
+}
+
+.form-style textarea:focus
+{
+  border-bottom: 1px dashed #D9FFA9;
+}
+/*button research*/
+
+.form-style input[type=submit],
+.form-style input[type=button]{
+  margin-top: 50px;
+  border: 1px solid black;
+  padding: 8px 10px 8px 10px;
+  border-radius: 5px;
+  color: black;
+}
+.form-style input[type=submit]:hover,
+.form-style input[type=button]:hover{
+  background: #93faa5;
+  color: white;
+  border: 1px solid whitesmoke;
+
+}
+
+#formMoviesBody .form-style input[type=submit]:hover,
+.form-style input[type=button]:hover{
+  background: #FFE4B5;
+  color: white;
+  border: 1px solid whitesmoke;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  /* margin-left: 20%; */
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+
+/* Change the link color to #111 (black) on hover */
+ li a:hover {
+  color: grey;
+  font-size: 22px;
+}
+a{
+  color: black;
+  text-align: center;
+}
+a:hover {
+  color: white;
+  text-decoration-style: none;
+} 
+
+/*  */
+/* LIST */
+/*  */
+
+.main-text{
+  margin-top: 5%;
+}
+.main-text h2{
+  margin-left: 5%;
+  font-size: 60px;
+  font-family: "Lucida Console", Courier, monospace;
+
+}
+.main-text a:hover {
+  color: #93faa5;
+  text-decoration-style: none;
+} 
+
+.main-textMovies{
+  margin-top: 5%;
+}
+.main-textMovies h2{
+  margin-left: 5%;
+  font-size: 60px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+.main-textMovies a:hover {
+  color: #ffcd76;
+  text-decoration-style: none;
+} 
+
+.main-text-details {
+  font-family: "Lucida Console", Courier, monospace;
+  color: #009473;
+  width: 50%;
+  padding: 2%;
+}
+
+.main-text-details a:hover {
+  color: #93faa5;
+}
+
+#backIdMovie .main-text-details {
+  font-family: "Lucida Console", Courier, monospace;
+  color: #ffcd76;
+  width: 50%;
+  padding: 2%;
+}
+#backIdMovie .main-text-details a:hover {
+  color: #ffcd78;
+}
+
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#nav li {
+  float: left;
+  /* margin-left: 20%; */
+}
+
+#nav li a {
+  display: block;
+  color: #009473;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+#nav li a:hover {
+  color: grey;
+  font-size: 22px;
+}
+
+#navIdMovie ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navIdMovie li {
+  float: left;
+  /* margin-left: 20%; */
+}
+
+#navIdMovie li a {
+  display: block;
+  color: #ffad1f;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+#navIdMovie li a:hover {
+  color: grey;
+  font-size: 22px;
+}

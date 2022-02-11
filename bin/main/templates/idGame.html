@@ -1,0 +1,54 @@
+
+ <!DOCTYPE html>
+<html>
+        <head>
+                <title>Traitement</title>
+                <ul id="nav"> 
+                        <li><a href="/" >Home </a></li>
+                        <li><a href="/form" >Games</a></li>
+                        <li><a href="/formMovie" >Movies</a></li>
+                </ul>
+
+                <link type="text/css" rel="stylesheet" href="stylesheet.css">
+        </head>
+        <body id="backIdGame">
+                <div class="main-text-details">
+                        <h1>Information about the Game</h1>
+                        <h2><img src="*{game.thumbnail}" style="width: 100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td th:text="${game.name}"></td></h2>
+                                
+                        
+                        <h3>Genre:</h3>
+                        <tr th:each="genre : ${game.genre}">
+                                <p> 
+                                        <a th:href="@{/gamelist(genre=${genre})}"> 
+                                                <td th:text="${genre}"></td>
+                                        </a>
+                                </p>        
+                        </tr>
+
+                        <h3>Platform:</h3>
+                        <tr th:each="platform : ${game.platform}">
+                                <p> 
+                                        <a th:href="@{/gamelist(platform=${platform})}"> 
+                                                <td th:text="${platform}"></td> 
+                                        </a>
+                                </p>        
+                        </tr>
+                        <h3>Publisher:</h3>
+                        <tr th:each="publisher : ${game.publisher}">
+                                <p> 
+                                        <a th:href="@{/gamelist(publisher=${publisher})}"> 
+                                                
+                                                <td th:text="${publisher}"></td>
+                                         </a>
+                                        
+                                </p>        
+                        </tr>
+                </div>
+        </body>
+        <footer id="idGameFooter" >
+                        <p>CopyRight @ 2022 - SIW Project CNAM - José Antunes NEVES - FIP 2 </p>
+                <a href="https://www.instagram.com/joseantunesneves/">Instagram<img src="img/insta.png" style="width: 15px;"></a>
+                <a href="https://github.com/JoseNvs117">GitHub<img src="img/git.png" style="width: 15px;"></a>
+	</footer>
+</html> 

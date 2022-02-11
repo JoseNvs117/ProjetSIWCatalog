@@ -1,0 +1,57 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Search Games</title>
+
+    <ul id="nav"> 
+        <li><a href="/" >Home </a></li>
+        <li><a href="/form" >Games</a></li>
+        <li><a href="/formMovie" >Movies</a></li>
+    </ul>
+
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+</head>
+<body id="formGamesBody">
+    
+    <div id="divList">
+        <img src="img/formcontr.png" style="width: 425px; margin-left: 20%; margin-top: 5%;">
+        <h2 id="TitreDivListG">Do want to have sneak peak of our games ?</h2>
+        <a href="/gamelist" >
+            <button class="formBtnList"><img src="img/arrow.png" style="width: 45px;"/></button>
+        </a>
+    </div>
+
+    <div id="divForm">
+        <h1>Search for a game</h1>
+        <p>by name, genre, platform, publisher or all !</p>
+
+        <form class="form-style" action="gamelist" method="get">
+            <label for="Name"><span>Name :</span>
+                <input type="text" id="name" name="name">
+            </label>
+            
+                <label for="genre"><span>Genre:</span>
+                <input type="text" id="genre" name="genre">
+            </label>
+            
+                <label for="platform"><span>Platform :</span>
+                <input type="text" id="platform" name="platform">
+            </label>
+
+                <label for="publisher"> <span> Publisher :</span>
+                <input type="text" id="publisher" name="publisher">
+            </label>
+
+            <label>
+            <span> </span><input type="submit" value="Search" />
+            </label>
+        </form>
+    </div>
+</body>
+<footer id="formFooter" >
+    <p>CopyRight @ 2022 - SIW Project CNAM - José Antunes NEVES - FIP 2 </p>
+    	<a href="https://www.instagram.com/joseantunesneves/">Instagram<img src="img/insta.png" style="width: 15px;"></a>
+    	<a href="https://github.com/JoseNvs117">GitHub<img src="img/git.png" style="width: 15px;"></a>
+</footer>
+</html> 

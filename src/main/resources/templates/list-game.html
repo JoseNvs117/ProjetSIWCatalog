@@ -1,0 +1,38 @@
+
+ <!DOCTYPE html>
+<html>
+    <head>
+    <title>Games</title>
+        <ul> 
+            <li><a href="/" >Home </a></li>
+            <li><a href="/form" >Games</a></li>
+            <li><a href="/formMovie" >Movies</a></li>
+        </ul>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </head>
+    <body id="listBack">
+        <div class="main-text">
+            <h2>Game list :</h2>
+
+            <div th:if="${not #lists.isEmpty(games)}">
+                        <tr th:each="game : ${games}">
+                        <p>
+                            <a th:href="@{/gameview(url=${game.url})}"> 
+                                <i class='fas fa-gamepad'></i>
+                                <td th:text="${game.name}"></td> 
+                            </a>
+                        </p>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </body>
+    <footer id="listFooter" >
+		<p>CopyRight @ 2022 - SIW Project CNAM - José Antunes NEVES - FIP 2 </p>
+    	<a href="https://www.instagram.com/joseantunesneves/">Instagram<img src="img/insta.png" style="width: 15px;"></a>
+    	<a href="https://github.com/JoseNvs117">GitHub<img src="img/git.png" style="width: 15px;"></a>
+	</footer>
+</html> 

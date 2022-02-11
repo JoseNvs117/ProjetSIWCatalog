@@ -1,0 +1,54 @@
+
+ <!DOCTYPE html>
+ <html>
+    <head>
+    <title>Search Movies</title>
+    
+        <ul> 
+            <li><a href="/" >Home </a></li>
+            <li><a href="/form" >Games</a></li>
+            <li><a href="/formMovie" >Movies</a></li>
+        </ul>
+    
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body id="formMoviesBody">
+
+        <div id="divList" >
+            <img src="img/tickets.png" style="width: 425px; margin-left: 20%; margin-top: 5%;">
+            <h2 id="TitreDivList">Do want to have sneak peak of our movies ?</h2>
+    
+            <a href="/movielist" >
+                <button class="formBtnList"><img src="img/arrow.png" style="width: 45px;"/></button>
+            </a>
+        </div>
+
+        <div id="divForm">
+            <h1>Search a Movie</h1>
+            <p>by name, director, or starring cast !</p>
+
+            <form class="form-style" action="movielist" method="get">
+                <label for="Name"><span>Name :</span>
+                    <input type="text" id="name" name="name">
+                </label>
+            
+                <label for="director"><span>Director :</span>
+                    <input type="text" id="director" name="director">
+                </label>
+            
+                <label for="starring"><span>Starring :</span>
+                    <input type="text" id="starring" name="starring">
+                </label>
+                
+                <label>
+                    <span> </span><input type="submit" value="Search" />
+                </label>
+            </form>
+        </div>
+    </body>
+    <footer id="formFooter" >
+        <p>CopyRight @ 2022 - SIW Project CNAM - José Antunes NEVES - FIP 2 </p>
+    	<a href="https://www.instagram.com/joseantunesneves/">Instagram<img src="img/insta.png" style="width: 15px;"></a>
+    	<a href="https://github.com/JoseNvs117">GitHub<img src="img/git.png" style="width: 15px;"></a>
+    </footer>
+ </html> 
